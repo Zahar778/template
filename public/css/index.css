@@ -1,26 +1,28 @@
 
-.btn:hover {
+.lesson-four-task-one .btn:hover {
     background-color: yellow;
     color: red;
 }
 
-.lesson-four-task-two .link:hover {
-background-color: green;
-}
+.link:hover + .title {
+    background-color: green;
+  }
 
 .lesson-four-task-three .link:visited{
     color: yellow;
 }
 
-#sidebar .link {
+.lesson-four-task-four .link:hover {
     color: red;
   }
+  
   
 
 .lesson-four-task-five .btn:active {
     color: wheat;
     background-color: blue;
-}
+  }
+  
 
 .lesson-four-task-six .btn:focus {
     color: black;
