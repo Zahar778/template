@@ -98,7 +98,7 @@ color: white; тут вообще не смотриться, текст не ч�
 
 .lesson-four-task-twenty
 input:invalid {
-    color: red;
+    background-color: red;
   }
   
   
