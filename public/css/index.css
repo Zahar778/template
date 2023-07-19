@@ -12,10 +12,9 @@
     color: yellow;
 }
 
-.lesson-four-task-four .link:hover {
+.lesson-four-task-four .link:link {
     color: red;
   }
-  
   
 
 .lesson-four-task-five .btn:active {
