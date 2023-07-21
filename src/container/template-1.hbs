@@ -18,19 +18,21 @@
 
 {{> hero data=hero}}
 
+
+<div class="abc">
 <div class="page_block">
-
-  <main class="row g-0 plans">
-
-    {{#each plans}}
-
-    <div class="col plans_card">
-    {{> card data=this}}
+  <main class="container">
+    <div class="row plans">
+      {{#each plans}}
+      <div class="col plans_card">
+        {{> card data=this}}
+      </div>
+      {{/each}}
     </div>
-
   </main>
 </div>
-{{/each}}
+</div>
+
 <div class="page_block">
 {{> divider}}
     <footer class="row footer">
