@@ -131,6 +131,7 @@ body {
     padding: 32px;
     flex-direction: column;
     justify-content: center;
+    margin-top: 60px;
     align-items: center;
     gap: 20px;
     align-self: stretch;
