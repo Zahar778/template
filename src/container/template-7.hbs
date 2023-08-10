@@ -1,9 +1,51 @@
-<header >
-<div class="header">
-    <div class="logo">{{header.brandName}}</div>
-    <nav>
-        <a href="{{links.url}}" class="nav_link">{{links.text}} ХУЙХУЙХУЙХУХЙУХЙУХУЙХ</a>
-    </nav>
+<header>
+{{>logo}}
+</header>
+
+
+
+<main>
+    <div class="hero">
+        <h1 class="title">{{hero.title}}</h1>
+        <p class="description">{{hero.description}}</p>
+        <a href="{{hero.button.url}}" class="btn">{{hero.button.text}}</a>
+    </div>
+
+
+    <div class="about">
+        <h2 class="heading">{{about.heading}}</h2>
+        <p class="info">{{about.info}}</p>
+    </div>
+
+
+    <div class="Our_Articles">
+        <p class="textArticles">Our Articles</p>
+        <a href="#" class="btn_sour">View All</a>
+    </div>
+
+
+
+        <div class="card">
+    {{#each articles}}
+    <div class="article">
+        <div class="img-container">
+            <img src="{{photo}}" alt="photo" class="img">
+            {{#if isNew}}
+            <div class="isNew">NEW!</div>
+            {{/if}}
+        </div>
+        <h3 class="name">{{name}}</h3>
+        <p class="description">{{description}}</p>
+        <a href="" class="card_btn">Read All</a>
+    </div>
+    {{/each}}
 </div>
 
-</header>
+
+
+</main>
+
+
+<footer>
+{{>footer}}
+</footer>

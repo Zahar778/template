@@ -33,22 +33,263 @@ html {
 
 }
 
+body {
+    max-width: 960px ;
+    width: 100%;   
+    margin-left: 385px;
+}
+
+
+.header {
+    display: flex;
+    border-bottom: 1px solid #253041;
+    padding: 12px 0px;
+}
+
 .logo {
-color: #FFF;
-display: flex;
-justify-content: center;
-padding: var(--space-m);
-font-weight: 700;
-line-height: 100%;
-border-radius: 10px;
-background: #885FFB;
-max-width: 56px;
-width: 100%;
-font-size: var(--weight-text);
-margin: var(--space-m);
+    color: #FFF;
+    font-size: var(--size-s);
+    border-radius: 10px;
+    background: #885FFB;
+    max-height: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 16px 11px;
+    margin-right: auto;
+
+}
+
+.nav_item {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-left: 24px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid #253041;
+
+}
+
+.nav_footer {
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+    color: #fff;
+    text-decoration: none;
+    font-size: var(--size-d);
+}
+
+.footer_copyright {
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+    color: #9CA3AF;
+    text-decoration: none;
+    font-size: var(--size-d);
+    margin-left: auto;
+}
+
+
+.ad {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.ad_logo {
+    padding: 2px 6px;
+    border-radius: 4px;
+    background: rgba(136, 95, 251, 0.20);
+    color: var(--accent-accent, #885FFB);
+    font-size: var(--size-s);
+}
+
+.ad_url {
+    padding: 12px;
+    font-size: var(--size-s);
+    color: #fff;
+    text-decoration: none;
+}
+
+.user_online{   
+    color: #fff;
+    margin-left: auto;
+    font-size: var(--size-s);
+
+}
+
+
+.hero {
+    display: flex;
+    height: 300px;
+    padding: 32px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    align-self: stretch;
+    border-radius: 24px;
+    background: radial-gradient(632.95% 141.42% at 100.00% 100.00%, rgba(17, 24, 39, 0.00) 0%, rgba(78, 63, 146, 0.60) 100%);
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
+}
+
+.title {
+    color: #FFF;
+    text-align: center;
+    font-size: var(--size-b);
+    padding-bottom: 20px;
+    font-weight: 700;
+}
+
+.description {
+    color: var(--main-additional-font, #9CA3AF);
+    text-align: center;
+    padding-bottom: 20px;
+    font-weight: 400;
+
+}
+
+
+.btn {
+    display: flex;
+    width: 150;
+    height: 40px;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 10px;
+    background: #885FFB;
+    padding: 12px 36px;
+    color: #fff;
+}
+
+
+.about {
+    margin-top: 60px;
+    display: flex;
+    padding: 32px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+    border-radius: 24px;
+    background: rgba(42, 49, 65, 0.44);
+    backdrop-filter: blur(25px);
+}
+
+
+.heading {
+    color: #FFF;
+    font-size: var(--size-b);
+    font-weight: 700;
+}
+
+
+.info {
+    font-size: var(--size-s);
+    font-weight: 400;
+    color: var(--main-additional-font, #9CA3AF);
+
+}
+
+
+.Our_Articles {
+    display: flex;
+    flex-direction: row;
+    margin-top: 64px;
+    margin-bottom: 32px;
+}
+
+.textArticles {
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.btn_sour {
+    display: flex;
+    padding: 5px;
+    font-size: var(--size-s);
+    margin-left: auto;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: var(--border-radius);
+    align-items: center;
+
 }
 
 
 
 
 
+.card {
+    max-width: 960px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    margin-right: 32px; 
+    position: relative;
+}
+
+.img {
+
+    border-radius: 10%;
+    z-index: 1;
+}
+.img-container {
+    position: relative;
+}
+
+.name {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 16px;
+
+}
+
+.description {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.card_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background:  #885FFB;
+    text-decoration: none;
+    width: 85px;
+    height: 30px;
+}
+
+.isNew {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin: 15px;
+    bottom: 0;
+    right: 0;
+    width: 50px;
+    height: 20px;
+    border-radius: 4px;
+    background: rgba(251, 95, 95, 0.50);
+    color: white; /* Цвет текста */
+    font-size: 12px; /* Размер текста */
+}
