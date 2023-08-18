@@ -8,11 +8,14 @@ const router = express.Router()
 // router.get Створює нам один ентпоїнт
 
 //           ↙ тут вводимо шлях (PATH) до сторінки
-router.get('/', function (req, res) {
+router.get('/slack_1', function (req, res) {
   // res.render генерує нам HTML сторінку
 
   //            ↙ cюди вводимо назву файлу з сontainer
-  res.render('index', {})
+  res.render('slack_1', {
+
+    layout: "slack_1",
+  })
   //                  ↑↑ сюди вводимо JSON дані
 })
 
