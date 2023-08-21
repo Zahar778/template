@@ -1,4 +1,7 @@
+@layer component, variant;
 
+
+@layer {
 
 /* Document
    ========================================================================== */
@@ -414,6 +417,7 @@ input:focus
 /* Text Inputs
 -----------------------------------------------*/
 
+
 input[type=date],
 input[type=datetime],
 input[type=datetime-local],
@@ -428,8 +432,8 @@ input[type=text],
 input[type=time],
 input[type=url],
 input[type=week]
-{
-}
+
+
 
 /* Button Controls
 -----------------------------------------------*/
@@ -929,4 +933,6 @@ input[type='number'] {
 input:-webkit-autofill {
   -webkit-box-shadow: none;
   box-shadow: none;
+}
+
 }
