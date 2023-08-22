@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -22,20 +22,99 @@
 <body>
   
 
-<div class="page .page--dashboard">
-  <aside class="page__aside aside vertical">
-    <div class="aside__logo">
+<div class="page page--dashboard">
+  <aside class="page__aside aside vertical vertical--big">
+    <div class=" text aside__logo">
       Sidebar
     </div>
-    <nav class=" vertical vertical_small">
+    <nav class=" vertical vertical--small">
       <a href="#" class="nav_button nav-button--active click">
         <span class="icon nav-button__icon" style="background-image: url('/svg/feature/nav/home.svg') ;"></span>
         <span class="text text-line text--light ">Home</span>
       </a>
+            <a href="#" class="nav_button  click">
+        <span class="icon nav-button__icon" style="background-image: url('/svg/feature/nav/orders.svg') ;"></span>
+        <span class="text text-line text--light ">Orders</span>
+      </a>
+            <a href="#" class="nav_button  click">
+        <span class="icon nav-button__icon" style="background-image: url('/svg/feature/nav/products.svg') ;"></span>
+        <span class="text text-line text--light ">Products</span>
+      </a>
+{{!-- 
+      <div class="field__block click">
+      <div class="field field--select">
+        <span class="text text--light">Choose...</span>
+      </div>
+              <select class="field__select ">
+          <option value="dog">Dog</option>
+          <option value="cat">Cat</option>
+          <option value="hamster">Hamster</option>
+          <option value="parrot">Parrot</option>
+          <option value="spider">Spider</option>
+        </select>
+        </div>
+        реализация кликабельной менюшки с проавого блока  --}}
     </nav>
   </aside>
-  <header class="header"></header>
-  <main class="main"></main>
+  <header class="header">
+     <span class="icon icon--header-one icon-button icon--color-one click" style="background-image: url('/svg/feature/header/1.svg') ;"></span>
+      <span class="icon icon--header-twoo icon-button icon--color-twoo click" style="background-image: url('/svg/feature/header/2.svg') ;"></span>
+      <span class="icon icon--header-thre icon-button icon--color-thre click" style="background-image: url('/svg/feature/header/3.svg') ;"></span>
+    <div class="layout header__content  text--small">
+      <div class="header__input">
+        <input type="text" placeholder="Search" class="field field--header text ">
+      <span class="icon header__icon-search" style="background-image: url('/svg/feature/header/header.svg') ;"></span>
+      <span class="icon icon--header-settings icon-button icon--color-blue click" style="background-image: url('/svg/feature/header/settings.svg') ;"></span>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+      <div class="layout">
+        <section class="box analytic__block">
+           <div class="analytic analytic--duble analytic--blue">
+             <span class="icon analytic__button icon-button icon--color-blue click" 
+             style="background-image: url('/svg/analytic/2.svg') ;"></span>
+
+             <div class="analytic__content vertical vertical--small ">
+              <div class="analytic__title text text--light">$961</div>
+              <div class="text--lighter text text--small ">Total Order</div>
+               <span class="icon analytic__arrow " 
+             style="background-image: url('/svg/analytic/arrow.svg') ;"></span>
+             </div>
+           </div>
+
+           <div class="analytic analytic--duble analytic--purple">
+             <span class="icon analytic__button icon-button icon--color-purple click" 
+             style="background-image: url('/svg/analytic/1.svg') ;"></span>
+
+             <div class="analytic__content vertical vertical--small ">
+              <div class="analytic__title text text--light">$500.00</div>
+              <div class="text--lighter text text--small ">Total earning</div>
+               <span class="icon analytic__arrow " 
+             style="background-image: url('/svg/analytic/arrow.svg') ;"></span>
+             </div>
+           </div>
+
+           <div class="analytic analytic--blue">
+    <div class="analytic_mini">
+        <span class="icon analytic__button icon-button icon--color-blue click" style="background-image: url('/svg/analytic/3.svg');"></span>
+        <div class="abc">
+        <div class="analytic__title_one text text--light " style="float: right;">$961</div>
+        <div class="text--lighter text text--small pading" style="clear: right;">Total Order</div>
+        </div>
+    </div>
+</div>
+
+                      <div class="analytic analytic--blue">
+            <span class="icon analytic__button icon-button  click" 
+             style="background-image: url('/svg/analytic/4.svg') ;"></span>
+                           <div class="analytic__title_two text text--light">$961</div>
+              <div class="text--lighter text text--small ">Total Order</div>
+             
+           </div>
+        </section>
+      </div>
+  </main>
 </div>
 
 
